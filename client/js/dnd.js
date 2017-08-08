@@ -298,6 +298,12 @@ qq.DragAndDrop = function(o) {
                 }
             }
         },
+        handleDataTransfer: function (dataTransfer, uploadDropZone) {
+            return handleDataTransfer(dataTransfer, uploadDropZone);
+        },
+        uploadDroppedFiles: function (uploadDropZone) {
+            uploadDroppedFiles(droppedFiles, uploadDropZone);
+        },
 
         dispose: function() {
             disposeSupport.dispose();
